@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) using the [TypeScript GraphQL](https://github.com/benawad/cra-template-typescript-graphql) template.
 
 ## Available Scripts
 
