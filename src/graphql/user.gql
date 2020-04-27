@@ -1,0 +1,6 @@
+query GetUser($id: ID!) {
+    apolloSingleUser(id: $id) {
+        name
+        email
+    }
+}
