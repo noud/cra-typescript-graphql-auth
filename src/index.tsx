@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 // import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, NavLink } from "react-router-dom";
 import { Route } from 'react-router'
 import './index.css';
 import App from './App';
@@ -17,8 +17,15 @@ ReactDOM.render(
   <ApolloProvider client={client}>
     <Router>
       <div>
-        <Route path="/user" component={UserPage} />
-        <Route path="/" component={App} />
+        <nav className="navigation">
+          <NavLink activeClassName="active" exact to="/">Home</NavLink>
+          <NavLink activeClassName="active" exact to="/user">Profile</NavLink>{/* protected */}
+          <NavLink activeClassName="active" exact to="/admin">Admin</NavLink>
+        </nav>
+        <div>
+          <Route path="/user" component={UserPage} />
+          <Route path="/" component={App} />
+        </div>
       </div>
     </Router>
   </ApolloProvider>,
