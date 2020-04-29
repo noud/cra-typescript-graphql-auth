@@ -18,7 +18,7 @@ class User extends React.Component {
   }
 
   handleDelete = () => {
-    // TODO: delete post before reloading posts
+    // TODO: delete user before reloading users
     this.props.refresh()
     // @todo refresh variables id
     // this.props.refresh({variables: {id: 5}})
